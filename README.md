@@ -1,8 +1,11 @@
 <h3>How to get current date or time in ajax jquery</h3>
+const monthNames = ["Jan", "Feb", "Mar", "April", "May", "June",
+  "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+];
 <br>
 var dt = new Date(); 
 <br>
-var time = dt.getDay() + " " + dt.getMonth() + "," + dt.getFullYear() + " , " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();; 
+var time = dt.getDay() + " " + monthNames[dt.getUTCMonth()] + "," + dt.getFullYear() + " , " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();; 
 <br>
 document.write(time);
 <br>
